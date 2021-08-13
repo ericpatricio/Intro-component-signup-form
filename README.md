@@ -21,8 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Intro-component-signup-form](https://ericpatricio.github.io/Intro-component-signup-form/)
 
 
 ### Built with
@@ -39,6 +38,6 @@ Practing more with Gulp js toolkit workflow
 
 ## Author
 
-- Website - [Eric Patricio](https://ericpatricio.tech)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/ericpatricio)
+- Website - [EricPatricio](https://ericpatricio.tech)
+- Frontend Mentor - [@EricPatricio](https://www.frontendmentor.io/profile/ericpatricio)
 - Twitter - [@EricPatricio](https://www.twitter.com/ericpatricio)
