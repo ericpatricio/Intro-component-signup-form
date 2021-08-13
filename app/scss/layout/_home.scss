@@ -1,0 +1,139 @@
+@use 'base/colors' as *;
+@use 'utilities/mixins' as *;
+
+main {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 1rem;
+
+  @include breakpoint-up(large) {
+    flex-direction: row;
+  }
+}
+
+.intro {
+  max-width: 37.5rem;
+  
+  &-info {
+    text-align: center;
+    padding: 1rem;
+
+    @include breakpoint-up(large) {
+      text-align: left;
+    }
+  }
+}
+
+.form {  
+  padding: 1rem;
+  max-width: 100%;
+  width: 600px; 
+ 
+  &-header-btn {
+    font-size: 1.05rem;    
+    background-color: $blue;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 5px 10px $dark-blue;
+    width: 100%;
+
+    a {
+      font-weight: 400;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+
+  form {    
+    background-color: $white;
+    padding: 1.5rem;
+    border-radius: 1rem; 
+    width: 100%;
+    
+    .form-control {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;     
+      position: relative;
+
+      input {                
+        font-weight: 700;
+        border: 1px solid $grayish-blue;
+        border-radius: .3em;
+        width: 100%;
+        padding: 1.2rem;
+        position: relative;      
+        
+        &:focus::placeholder {
+          opacity: 0;
+        }     
+        
+      }
+
+      .error-icon {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        bottom: 1rem;
+        display: none;
+      }
+
+      small {
+        color: $red;
+        float: right;
+        display: none;                
+      }
+
+      &.error {
+
+        input {
+          border: 1px solid $red;
+
+          &::placeholder {
+            opacity: 0;
+          }
+        }
+
+        .error-icon,
+        small {
+          display: block; 
+        }
+      }
+
+      &.success {
+        input {
+          border: 1px solid $green;          
+        }
+      }
+    }
+
+    button[type=submit] {      
+      background-color: $green;      
+      margin-bottom: 1rem;
+      width: 100%;
+      text-transform: uppercase;
+      color: $white;
+      font-size: .8rem;
+      font-weight: 600;      
+      position: relative;
+      @include breakpoint-up(large) {
+        font-size: 1rem;
+      }  
+    }
+
+    p {
+      font-size: .65rem;
+      color: $grayish-blue;
+      text-align: center;
+
+      a {
+        color: $red;
+        font-weight: 600;
+      }
+    }
+  }
+}

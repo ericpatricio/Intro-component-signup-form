@@ -1,0 +1,37 @@
+{
+  "name": "intro-component-with-sign-up-form",
+  "version": "1.0.0",
+  "description": "![Design preview for the Intro component with sign up form coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "autoprefixer": "^10.3.1",
+    "browser-sync": "^2.27.5",
+    "cssnano": "^5.0.7",
+    "dart-sass": "^1.25.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-terser": "^2.0.1",
+    "postcss": "^8.3.6"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "sass": "^1.37.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericpatricio/Intro-component-with-sign-up-form.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/ericpatricio/Intro-component-with-sign-up-form/issues"
+  },
+  "homepage": "https://github.com/ericpatricio/Intro-component-with-sign-up-form#readme"
+}

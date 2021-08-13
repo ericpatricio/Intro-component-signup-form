@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="dist/style.css">
+  <script defer src="app/js/script.js"></script>
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  
+</head>
+
+<body>
+
+  <main class="container">
+ 
+    <section class="intro">
+      <article class="intro-info">
+        <h1>Learn to code by watching others</h1>
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+          but understanding how developers think is invaluable.</p>
+      </article>
+    </section>
+    
+    <section class="form">
+      <button class="form-header-btn" title="Try it free" aria-label="Try it free">
+        <a href="#/" target="_blank" ><span>Try it free 7 days</span> then $20/mo. thereafter</a>
+      </button>
+    
+      <form id="form" role="form">
+        <div class="form-control" >
+          <input type="text" id="first-name" placeholder="First Name" role="firstname">
+          <img src="images/icon-error.svg" alt="error icon" class="error-icon">
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <input type="text" id="last-name" placeholder="Last Name" role="lastname">
+          <img src="images/icon-error.svg" alt="error icon" class="error-icon">
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <input type="text" id="email" placeholder="Email Address" role="email">
+          <img src="images/icon-error.svg" alt="error icon" class="error-icon">
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <input type="password" id="password" placeholder="Password" role="password">
+          <img src="images/icon-error.svg" alt="error icon" class="error-icon">
+          <small>Error message</small>
+        </div>
+    
+        <button type="submit" class="button" title="Claim your free trial" aria-label="Claim your free trial">Claim your free trial</button>
+        <p>By clicking the button, you are agreeing to our <a href="#/">Terms and Services</a></p>
+      </form>
+
+    </section>      
+
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://ericpatricio.tech" target="_blank">Eric Patricio</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
